@@ -35,7 +35,7 @@
 						<p align="right"><span><?= $data["date"] ?></span>Автор темы: <?= $data["user"] ?>.</p>
 
 						<?php if(isset($_SESSION["auth"])){ ?>
-							<form id="commentForm" action="" method="POST"><textarea id="comment" placeholder="Ваш коментарий..." type="text"></textarea><textarea id="code" placeholder="Ваш код..." type="text"></textarea><div><input id="goComment" value="Отправить" type="button"><input value="Прикрепить код" id="addCode" type="button"></div></form></br></br>
+							<form id="commentForm" action="" method="POST"><textarea id="comment" placeholder="Ваш комментарий..." type="text"></textarea><textarea id="code" placeholder="Ваш код..." type="text"></textarea><div><input id="goComment" value="Отправить" type="button"><input value="Прикрепить код" id="addCode" type="button"></div></form></br></br>
 						<?php }else{ ?>
 							<p><a style="color: rgb(50, 50, 50);" href="#top">Войдите</a>, чтобы прокоментировать.</p>
 						<?php }; ?>
